@@ -1,4 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import startIoServer from "./io"
+
 export default defineNuxtConfig({
-  devtools: { enabled: true }
+  css: [
+    'bootstrap/dist/css/bootstrap.css'
+  ],
+
+  devtools: { enabled: true },
+
+  hooks: {
+    listen: (server) => startIoServer(server)
+  }
 })
