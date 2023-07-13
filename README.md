@@ -1,6 +1,6 @@
 # nuxt3-socket-io
 
-Nuxt 3 example using sockets with Socket.io 
+Nuxt 3 and Socket.io example using sockets and local server
 
 #  Useful documentation regarding usage of Socket.io and Nuxt 3
 
