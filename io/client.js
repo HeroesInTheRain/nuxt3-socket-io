@@ -13,7 +13,7 @@ socket = io(server);
 socket.on("connect", () => {
     state.connected = true;
     state.messagesList.unshift({
-        message: "Socket connected :)",
+        message: "Client connected to Socket: " + socket.id + " :)",
         type: 'alert-success'
       });
 });

@@ -6,7 +6,7 @@ export default (nuxtServer: NuxtServer) => {
     const io = new Server(nuxtServer);
     io.on("connection", (socket: Socket) => {
       socket.emit("message", {
-        message: "Server connected :)",
+        message: "Server connected to Socket: " + socket.id + " :)",
         type: 'alert-success'
       });
 
